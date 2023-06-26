@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <Authors>Muzammil Khaja Mohammed</Authors>
+    <Company>RealPage</Company>
+    <RepositoryUrl>https://github.com/realpage/realpage-webhooks</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/realpage/realpage-webhooks</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>Realpage Webhooks</PackageTags>
+    <Description>Realpage Webhooks.</Description>
+    <PackageReleaseNotes>https://github.com/realpage/realpage-webhooks/blob/master/README.md</PackageReleaseNotes>
+    <Version>1.2.0</Version>
+    <AssemblyVersion>1.2.0.0</AssemblyVersion>
+    <FileVersion>1.2.0.0</FileVersion>
+    <PackageIcon>rp-logo.png</PackageIcon>
+    <Copyright>MIT</Copyright>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1" PrivateAssets="All"/>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="rp-logo.png">
+      <Pack>True</Pack>
+      <PackagePath></PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,16 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.1.10" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\src\dotnet\RealPage.Webhooks.AspNetCore\RealPage.Webhooks.AspNetCore.csproj" />
+    <ProjectReference Include="..\..\..\src\dotnet\RealPage.Webhooks\RealPage.Webhooks.csproj" />
+  </ItemGroup>
+
+</Project>

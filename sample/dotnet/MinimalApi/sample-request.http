@@ -1,0 +1,10 @@
+# docker pull artifacts.realpage.com/rp-docker-local/starter-kits/public/webhooks/localwebhooks:891336
+# docker run -d -p 5555:5000 -e CallbackBase='http://host.docker.internal:5100' -e WebhookRoute='/v1/prospect-changed' --name webhooks artifacts.realpage.com/rp-docker-local/starter-kits/public/webhooks/localwebhooks:891336
+POST https://localhost:44334/v1/prospect-changed
+Content-Type: application/json
+apikey: somekeyvalue
+clientid: sample-http-client
+correlation-id: 1234567890
+signature: 2b0a639a7af0e6f273e7177306fd9308aaec7523df482c89ea64732f86d2bd8b
+
+{"id":"0ec763de-c7c3-4274-85e6-0fc3ba20cf61","topic":"prospect.changed","payload":{"id":1234,"name":"erik dahl"}}
